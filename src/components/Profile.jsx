@@ -1,5 +1,5 @@
 import css from 'components/Profile.module.css';
-
+import PropTypes from 'prop-types';
 
 
 const Info = ({label, quantity }) => {
@@ -16,6 +16,7 @@ export const Profile = ({user: {avatar, username, tag, location, stats:{follower
         src={avatar}
         alt="User avatar"
         className="avatar"
+        // width="200"
       />
       <p className="name">{username}</p>
       <p className="tag">{tag}</p>
@@ -26,25 +27,20 @@ export const Profile = ({user: {avatar, username, tag, location, stats:{follower
       <Info label={`Followers`} quantity={followers}/>
       <Info label={`Views`} quantity={views}/>
       <Info label={`Likes`} quantity={likes}/>
-      {/* <li>
-        <span className="label">Followers</span>
-        <span className="quantity">{followers}</span>
-      </li>
-      <li>
-        <span className="label">Views</span>
-        <span className="quantity">{views}</span>
-      </li>
-      <li>
-        <span className="label">Likes</span>
-        <span className="quantity">{likes}</span>
-      </li> */}
     </ul>
   </div>;
 };
 
-// Profile.propTypes = {
-//     user: PropTypes.exact({
-//         username: PropTypes.string,
-//         tag: PropTypes.string,
-//     })
-// }
+Profile.propTypes = {
+    user: PropTypes.exact({
+        avatar: PropTypes.string,
+        username: PropTypes.string,
+        tag: PropTypes.string,
+        location: PropTypes.string,
+        stats: PropTypes.exact({
+          followers: PropTypes.string,
+          views: PropTypes.string,
+          likes: PropTypes.string,
+    })
+})
+}
