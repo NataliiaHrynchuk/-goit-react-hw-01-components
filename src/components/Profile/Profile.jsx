@@ -1,4 +1,4 @@
-import css from 'components/Profile.module.css';
+import css from 'components/Profile/Profile.module.css';
 import PropTypes from 'prop-types';
 
 
@@ -38,9 +38,9 @@ Profile.propTypes = {
         tag: PropTypes.string,
         location: PropTypes.string,
         stats: PropTypes.exact({
-          followers: PropTypes.string,
-          views: PropTypes.string,
-          likes: PropTypes.string,
+          followers: PropTypes.number,
+          views: PropTypes.number,
+          likes: PropTypes.number,
     })
 })
 }
