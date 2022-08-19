@@ -10,9 +10,9 @@ export const Stats = ( {followers, views, likes}) => {
     </ul>
 }
 Stats.propTypes = {
-    stats: PropTypes.exact({
-        followers: PropTypes.number,
-        views: PropTypes.number,
-        likes: PropTypes.number,
+    stats: PropTypes.shape({
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired,
   })
 }
