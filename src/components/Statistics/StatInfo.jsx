@@ -7,6 +7,6 @@ export const StatInfo = ({label, percentage}) => {
 }
 
 StatInfo.propTypes = {
-    label: PropTypes.string,
-    percentage: PropTypes.number,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
 }
