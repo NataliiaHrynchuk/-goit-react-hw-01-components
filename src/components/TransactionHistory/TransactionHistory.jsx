@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { TbodyList } from "./TbodyList";
 import { Thead } from "./Thead";
 export const TransactionHistory = ({items}) => {
@@ -10,4 +11,11 @@ export const TransactionHistory = ({items}) => {
             
             
     </table>
+}
+TransactionHistory.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+          
+        }),
+    )
 }
