@@ -13,5 +13,9 @@ return <ul>
 }
 
 StatList.propTypes = {
-    items: PropTypes.array,
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.string.isRequired,
+        }),
+    )
 }
