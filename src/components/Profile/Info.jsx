@@ -7,6 +7,6 @@ export const Info = ({label, quantity }) => {
   }
 
 Info.propTypes = {
-  label: PropTypes.string,
-  quantity: PropTypes.number,
+  label: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
 }
