@@ -1,4 +1,5 @@
 import css from 'components/Profile/Profile.module.css';
+import PropTypes from 'prop-types';
 import { Avatar } from './Avatar';
 import { Stats } from './Stats';
 
@@ -19,3 +20,16 @@ export const Profile = ({user:{avatar, username, tag, location, stats}}) => {
   </div>;
 };
 
+Profile.propTypes = {
+  user: PropTypes.exact({
+    avatar: PropTypes.string,
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    stats: PropTypes.exact({
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes: PropTypes.number,
+})
+  })
+}

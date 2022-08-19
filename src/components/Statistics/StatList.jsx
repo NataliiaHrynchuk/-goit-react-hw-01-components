@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { StatInfo } from "components/Statistics/StatInfo";
 export const StatList = ({items}) => {
 return <ul>
@@ -9,4 +10,8 @@ return <ul>
         </li>
     ))}
 </ul>
+}
+
+StatList.propTypes = {
+    items: PropTypes.array,
 }

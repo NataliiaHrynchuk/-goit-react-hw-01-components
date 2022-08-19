@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export const Info = ({label, quantity }) => {
     return <li>
       <span>{label}</span>
@@ -5,3 +6,7 @@ export const Info = ({label, quantity }) => {
     </li>
   }
 
+Info.propTypes = {
+  label: PropTypes.string,
+  quantity: PropTypes.number,
+}

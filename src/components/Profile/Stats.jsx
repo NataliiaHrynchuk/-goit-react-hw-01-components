@@ -1,5 +1,6 @@
-import {Info} from './Info';
 import PropTypes from 'prop-types';
+import {Info} from './Info';
+
 
 export const Stats = ( {followers, views, likes}) => {
     return <ul>
