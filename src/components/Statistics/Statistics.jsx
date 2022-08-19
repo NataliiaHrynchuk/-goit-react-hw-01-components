@@ -3,7 +3,7 @@ import { StatList } from "./StatList";
 // import data from 'components/Statistics/data.json';
 export const Statistics = ({title, stats}) => {
     return <div>
-    <h2>{title}</h2>
+    {title && <h2>{title}</h2>}
   <StatList items={stats}/>
     
   </div>
@@ -11,5 +11,5 @@ export const Statistics = ({title, stats}) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array,
+  stats: PropTypes.array.isRequired,
 }
