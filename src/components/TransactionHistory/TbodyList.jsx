@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export const TbodyList = ({items}) => {
     return <tbody>
         {items.map(item => (
@@ -9,4 +10,12 @@ export const TbodyList = ({items}) => {
         ))}
 
     </tbody>
+}
+
+TbodyList.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.string.isRequired,
+        }),
+    )
 }
