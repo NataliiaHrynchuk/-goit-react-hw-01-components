@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export const Thead = ({nameFirstColumn, nameSecondColumn, nameThirdColumn}) => {
     return <thead>
     <tr>
@@ -7,3 +8,8 @@ export const Thead = ({nameFirstColumn, nameSecondColumn, nameThirdColumn}) => {
     </tr>
   </thead>
 }
+ Thead.propTypes = {
+  nameFirstColumn: PropTypes.string.isRequired,
+  nameSecondColumn: PropTypes.string.isRequired,
+  nameThirdColumn: PropTypes.string.isRequired,
+ }
