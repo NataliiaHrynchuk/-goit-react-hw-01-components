@@ -21,15 +21,11 @@ export const Profile = ({user:{avatar, username, tag, location, stats}}) => {
 };
 
 Profile.propTypes = {
-  user: PropTypes.exact({
-    avatar: PropTypes.string,
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    stats: PropTypes.exact({
-      followers: PropTypes.number,
-      views: PropTypes.number,
-      likes: PropTypes.number,
-})
-  })
+  user: PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      username: PropTypes.string.isRequired,
+      tag: PropTypes.string.isRequired,
+      location: PropTypes.string.isRequired,
+      stats: PropTypes.shape()
+    })
 }
