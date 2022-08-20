@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import css from 'components/Profile/Stats.module.css';
 import {Info} from './Info';
 
 
 export const Stats = ( {followers, views, likes}) => {
-    return <ul>
+    return <ul className={css.stats_list}>
       <Info label={`Followers`} quantity={followers}/>
       <Info label={`Views`} quantity={views}/>
       <Info label={`Likes`} quantity={likes}/>
