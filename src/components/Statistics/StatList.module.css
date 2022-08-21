@@ -3,5 +3,7 @@
     justify-content: center;
     list-style: none;
     padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
         
 }
