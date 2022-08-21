@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
+import css from 'components/Profile/Avatar.module.css';
 
 export const Avatar = ({avatar, username, tag, location}) => {
-    return <div>
+    return <div className={css.description}>
         <img
         src={avatar}
         alt="User avatar"
+        className={css.avatar}
         // width="200"
       />
-      <p>{username}</p>
-      <p>{tag}</p>
-      <p>{location}</p>
+      <p className={css.name}>{username}</p>
+      <p className={css.tag}>{`@${tag}`}</p>
+      <p className={css.location}>{location}</p>
     </div>
 }
  Avatar.propTypes = {
