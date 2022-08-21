@@ -4,7 +4,7 @@ import {Info} from './Info';
 
 
 export const Stats = ( {followers, views, likes}) => {
-    return <ul className={css.stats_list}>
+    return <ul className={css.stats}>
       <Info label={`Followers`} quantity={followers}/>
       <Info label={`Views`} quantity={views}/>
       <Info label={`Likes`} quantity={likes}/>
