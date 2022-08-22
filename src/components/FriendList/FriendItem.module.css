@@ -1,4 +1,4 @@
-.item {
+/* .item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -12,19 +12,19 @@
     box-shadow: 3px 6px 7px 0px rgba(0,0,0,0.63);
     -webkit-box-shadow: 3px 6px 7px 0px rgba(0,0,0,0.63);
     -moz-box-shadow: 3px 6px 7px 0px rgba(0,0,0,0.63);
-}
+} */
 
-.status {
+/* .status {
     width: 20px;
     height: 20px;
     border-radius: 100%;
     
-}
+} */
 
-.name {
+/* .name {
     font-size: 24px;
     font-weight: 600;
-}
+} */
 
 .true {
     background-color: green;
