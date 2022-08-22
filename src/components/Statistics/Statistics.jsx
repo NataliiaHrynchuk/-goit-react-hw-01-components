@@ -7,7 +7,6 @@ export const Statistics = ({title, stats}) => {
     return <section className={css.statistics}>
     {title && <Title title={title}/>}
   <StatList items={stats}/>
-    
   </section>
 }
 
