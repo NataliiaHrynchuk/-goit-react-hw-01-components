@@ -1,12 +1,15 @@
+
 .stat_info {
     width: 45px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    color: rgb(253, 251, 251);
     padding: 10px;
-    /* background-color: aqua; */
+
+    
 }
+
 .label {
     margin-right: 10px;
 }
