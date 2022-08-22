@@ -1,5 +1,6 @@
 .stat_list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     padding-inline-start: 0;
