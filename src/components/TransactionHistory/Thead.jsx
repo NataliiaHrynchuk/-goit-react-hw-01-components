@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from 'components/TransactionHistory/Thead.module.css';
 export const Thead = ({nameFirstColumn, nameSecondColumn, nameThirdColumn}) => {
-    return <thead>
+    return <thead className={css.thead}>
     <tr>
-      <th>{nameFirstColumn}</th>
-      <th>{nameSecondColumn}</th>
-      <th>{nameThirdColumn}</th>
+      <th className={css.th}>{nameFirstColumn}</th>
+      <th className={css.th}>{nameSecondColumn}</th>
+      <th className={css.th}>{nameThirdColumn}</th>
     </tr>
   </thead>
 }
