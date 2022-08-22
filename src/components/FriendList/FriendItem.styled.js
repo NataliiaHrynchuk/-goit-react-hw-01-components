@@ -20,6 +20,13 @@ export const Status = styled.span`
 width: 20px;
     height: 20px;
     border-radius: 100%;
+    background-color:
+    ${props => {
+        // console.log(props.status);
+        if (props.status) {
+            return "green";
+        } else return "red";
+    }}
 `;   
 
 export const Name = styled.p`
