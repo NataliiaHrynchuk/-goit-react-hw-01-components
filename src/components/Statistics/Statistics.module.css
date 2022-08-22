@@ -1,4 +1,7 @@
 .statistics {
-    display: inline-block;
+    width: 325px;
+    /* display: inline-block; */
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
