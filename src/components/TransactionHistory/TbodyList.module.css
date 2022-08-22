@@ -1,0 +1,25 @@
+.tbody {
+    background-color: white;
+}
+
+.tr:nth-child(2n) {
+    background-color:whitesmoke;
+}
+
+
+.td {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: dimgray;
+    text-transform: capitalize;
+}
+
+.tr:last-child .td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.tr:last-child .td:last-child {
+    border-bottom-right-radius: 4px;
+}
