@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
-import css from 'components/Profile/Stats.module.css';
 import {Info} from './Info';
+import { StatsList } from './Stats.styled';
 
 
 export const Stats = ( {followers, views, likes}) => {
-    return <ul className={css.stats}>
+    return <StatsList>
       <Info label={`Followers`} quantity={followers}/>
       <Info label={`Views`} quantity={views}/>
       <Info label={`Likes`} quantity={likes}/>
-    </ul>
+    </StatsList>
 }
 Stats.propTypes = {
     stats: PropTypes.shape({
