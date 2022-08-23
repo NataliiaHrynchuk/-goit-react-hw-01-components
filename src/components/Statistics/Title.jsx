@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import css from 'components/Statistics/Title.module.css';
+import { Heading } from './Title.styled';
+
 export const Title = ({title}) => {
-    return <h2 className={css.title}>{title}</h2>
+    return <Heading>{title}</Heading>
 }
 
 Title.propTytle = {
