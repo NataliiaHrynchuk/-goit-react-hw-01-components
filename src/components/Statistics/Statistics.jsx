@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import css from 'components/Statistics/Statistics.module.css'
 import { Title } from './Title';
 import { StatList } from "./StatList";
-// import data from 'components/Statistics/data.json';
+import { StatisticsSection } from './Statistics.styled';
+
 export const Statistics = ({title, stats}) => {
-    return <section className={css.statistics}>
+    return <StatisticsSection>
     {title && <Title title={title}/>}
   <StatList items={stats}/>
-  </section>
+  </StatisticsSection>
 }
 
 Statistics.propTypes = {
