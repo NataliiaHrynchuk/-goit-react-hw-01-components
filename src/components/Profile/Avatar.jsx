@@ -1,18 +1,16 @@
 import PropTypes from 'prop-types';
-import css from 'components/Profile/Avatar.module.css';
+import {Description, ImageUrl, Name, Tag, Location} from 'components/Profile/Avater.styled';
 
 export const Avatar = ({avatar, username, tag, location}) => {
-    return <div className={css.description}>
-        <img
+    return <Description>
+        <ImageUrl
         src={avatar}
         alt="User avatar"
-        className={css.avatar}
-        // width="200"
-      />
-      <p className={css.name}>{username}</p>
-      <p className={css.tag}>{`@${tag}`}</p>
-      <p className={css.location}>{location}</p>
-    </div>
+        />
+      <Name>{username}</Name>
+      <Tag>{`@${tag}`}</Tag>
+      <Location>{location}</Location>
+    </Description>
 }
  Avatar.propTypes = {
     avatar: PropTypes.string.isRequired,
