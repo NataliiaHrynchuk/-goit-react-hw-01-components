@@ -1,12 +1,12 @@
-import css from 'components/Profile/Profile.module.css';
 import PropTypes from 'prop-types';
 import { Avatar } from './Avatar';
 import { Stats } from './Stats';
+import { Container } from './Profile.styled';
 
 
 
 export const Profile = ({user:{avatar, username, tag, location, stats}}) => {
-    return <div className={css.profile}>
+    return <Container>
       <Avatar 
       avatar={avatar}
       username={username}
@@ -17,7 +17,7 @@ export const Profile = ({user:{avatar, username, tag, location, stats}}) => {
              views={stats.views}
              likes={stats.likes}/>
     
-  </div>;
+  </Container>;
 };
 
 Profile.propTypes = {
