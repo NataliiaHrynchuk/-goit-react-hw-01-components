@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
-import css from 'components/TransactionHistory/Thead.module.css';
+import { HeaderLine } from './Thead.styled';
+
 export const Thead = ({nameFirstColumn, nameSecondColumn, nameThirdColumn}) => {
-    return <thead className={css.thead}>
+    return <HeaderLine>
     <tr>
-      <th className={css.th}>{nameFirstColumn}</th>
-      <th className={css.th}>{nameSecondColumn}</th>
-      <th className={css.th}>{nameThirdColumn}</th>
+      <th>{nameFirstColumn}</th>
+      <th>{nameSecondColumn}</th>
+      <th>{nameThirdColumn}</th>
     </tr>
-  </thead>
+  </HeaderLine>
 }
  Thead.propTypes = {
   nameFirstColumn: PropTypes.string.isRequired,
